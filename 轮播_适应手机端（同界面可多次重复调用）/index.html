@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery按钮控制图片切换焦点图</title>
+
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.owl-demo').owlCarousel({
+                items: 1,
+                navigation: true,
+                navigationText: ["上一个","下一个"],
+                autoPlay: true,
+                stopOnHover: true
+            }).hover(function(){
+                $('.owl-buttons').show();
+            }, function(){
+                $('.owl-buttons').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+<!-- Demo -->
+<div class="owl-demo owl-carousel">
+    <a class="item" href="#" target="_blank"><img src="img/1.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/2.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/3.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/4.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/5.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/6.jpg" alt=""></a>
+    <a class="item" href="#" target="_blank"><img src="img/7.jpg" alt=""></a>
+</div>
+<!-- Demo end -->
+
+
+</body>
+</html>
